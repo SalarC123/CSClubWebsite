@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="landing-page-intro">
+        <div class="content-wrapper">
+            <h1>Join The Pleasant Valley <div class="gradient-text">Computer Science</div> Club</h1>
+            <h3>It's free!</h3>
+            <p>
+                Explore the field of computer science by coding games, websites, and apps. 
+                Our community will collaborate with and support you every step of the way
+            </p>
+            <a href={{ url_for("join") }}><button>I'm Interested</button></a>
+        </div>
+        <div class="svg-wrapper">
+            <img src="../static/Images/landing-page-girl.svg" alt="Coding Image">
+        </div>
+    </section>
+    <img class="page-wave-down" src="../static/Images/page-wave-1.svg" alt="Page Wave Down">
+
+
+
+    <section class="landing-page-resources"> 
+        <div class="svg-wrapper">
+            <img src="../static/Images/landing-page-laptop.svg" alt="Girl Coding">
+        </div>
+        <div class="content-wrapper">
+            <h1>Let's <div class="gradient-text">Learn</div></h1>
+            <p>Check out these high quality, free resources to get a head start</p>
+            <a href={{ url_for("resources") }}><button>Resources</button></a>
+        </div>
+    </section>
+    <img class="page-wave-up" src="../static/Images/page-wave-2.svg" alt="Page Wave Up">
+
+
+    <section class="landing-page-projects">
+        <div class="content-wrapper">
+            <h1>Check Out <div class="gradient-text">Our Projects</div></h1>
+            <p>Help us add to this list by pitching your own ideas</p>
+            <a href={{ url_for("projects") }}><button>Projects</button></a>
+        </div>
+        <div class="svg-wrapper">
+            <img src="../static/Images/landing-page-project.svg" alt="Project Collaboration Image">
+        </div>
+    </section>
+    <img class="page-wave-down" src="../static/Images/page-wave-1.svg" alt="Page Wave Down">
+
+
+
+    <section class="landing-page-opportunities">
+        <div class="svg-wrapper">
+            <img src="../static/Images/landing-page-opportunities.svg" alt="">
+        </div>
+        <div class="content-wrapper">
+            <h1>Further <div class="gradient-text">Your Career</div></h1>
+            <p>Participate in local computer science events and discover new opportunities</p>
+            <a href={{ url_for("opportunities") }}><button>Opportunities</button></a>
+        </div>
+    </section>
+    <img class="page-wave-up" src="../static/Images/page-wave-2.svg" alt="Page Wave Up">
+
+
+
+    <section class="landing-page-about">
+        <div class="content-wrapper">
+            <h1>Meet <div class="gradient-text">Us</div></h1>
+            <p>View the current club members and learn more about our mission</p>
+            <a href={{ url_for("about") }}><button>About Us</button></a>
+        </div>
+        <div class="svg-wrapper">
+            <img src="../static/Images/landing-page-about.svg" alt="">
+        </div>
+    </section>
+    <img class="page-wave-down" src="../static/Images/page-wave-1.svg" alt="Page Wave Down">
+{% endblock %}

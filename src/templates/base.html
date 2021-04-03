@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>{{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content={{ description }}/>
+        <!-- CONTAINS NAV AND FOOTER STYLING -->
+        <link rel="stylesheet" href="../static/base.css">
+        <link rel="stylesheet" href={{ '../static/{}'.format(stylesheet) }}>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a href={{ url_for("landing") }}><img src="../static/Images/logo.png" alt="PVCS Logo" class="logo"></a>
+            <a class="navlink" href={{ url_for("landing") }}><h3>Home</h3></a>
+            <a class="navlink" href={{ url_for("projects") }}><h3>Projects</h3></a>
+            <a class="navlink" href={{ url_for("resources") }}><h3>Coding Resources</h3></a>
+            <a class="navlink" href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
+            <a class="navlink" href={{ url_for("about") }}><h3>About</h3></a>
+            <a class="navlink" href={{ url_for("join") }}><button>Join Club</button></a>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href={{ url_for("landing") }}><img class="logo" src="../static/Images/logo.png" alt=""></a>
+                <h2>Pleasant Valley Computer Science Club</h2>
+            </div>
+            <div class="footer-nav">
+                <a href={{ url_for("landing") }}>Home</a>
+                <a href={{ url_for("projects") }}>Projects</a>
+                <a href={{ url_for("resources") }}>Coding Resources</a>
+                <a href={{ url_for("opportunities") }}>Opportunities</a>
+                <a href={{ url_for("about") }}>About</a>
+                <a href={{ url_for("join") }}>Join Club</a>
+            </div>
+            <div class="footer-icons">
+                <a target="_blank" href="https://discord.gg/b7J9sFyF"><img class="social-media-icon" src="../static/Images/discord.svg" alt=""></a>
+                <a href=""><img class="social-media-icon" src="../static/Images/skype.svg" alt=""></a>
+            </div>
+        </footer>
+
+        <script src={{ '../static/{}'.format(jsFile) }}></script>
+    </body>
+
+</html>
