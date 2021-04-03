@@ -7,6 +7,7 @@ app = Flask(__name__)
 # TO RUN FLASK APP, TYPE THIS IN THE TERMINAL:
     # source venv/bin/activate
     # export FLASK_APP=routes.py
+    # cd src
     # flask run
 
 @app.route('/')
