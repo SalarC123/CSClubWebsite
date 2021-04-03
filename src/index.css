@@ -112,17 +112,6 @@ body {
 
 
 
-.gradient-overlay {
-    pointer-events: none;
-    width: 10rem;
-    height: 3.5rem;
-    border-radius: 10px;
-    background-color: black;
-    opacity: 0.1;
-    position: absolute;
-    margin-top: 3rem;
-}
-
 .gradient-text {
     display: inline;
     background: -webkit-linear-gradient(45deg, #00eb74, #00d9ff);
@@ -244,6 +233,7 @@ body {
     color:#1E202D;
     padding: 0.7rem 1rem;
     border-left: 0.2rem solid #1E202D;
+    text-decoration: none;
 }
 
 .footer-nav a:first-child {
@@ -260,7 +250,7 @@ body {
 
 
 
-@media (max-width:1200px) {
+@media (max-width:1500px) {
     .landing-page-intro {
         flex-direction: column;
         align-items: center;
@@ -303,8 +293,8 @@ body {
         font-size: 3vw;
     }
     .content-wrapper button {
-        width: 100%;
-        /* font-size: 2.2vw; */
+        /* width: 100%;
+        font-size: 3.5vw; */
     }
     .svg-wrapper img {
         width: 80vw;
@@ -337,3 +327,9 @@ body {
         width: 65vw;
     }
 }
+
+/* @media (max-width:900px) {
+    .navbar {
+        flex-direction: column;
+    }
+} */
