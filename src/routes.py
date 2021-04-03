@@ -24,7 +24,7 @@ def landing():
         jsFile=jsFile,
 )
 
-@app.route('/projects')
+@app.route('/projects.html')
 def projects():
     title = "Projects"
     description = "Projects page for The Pleasant Valley Computer Science Club"
@@ -38,7 +38,7 @@ def projects():
         jsFile=jsFile,
 )
 
-@app.route('/resources')
+@app.route('/resources.html')
 def resources():
     title = "Resources"
     description = "Resources page for The Pleasant Valley Computer Science Club"
@@ -52,7 +52,7 @@ def resources():
         jsFile=jsFile,
 )
 
-@app.route('/opportunities')
+@app.route('/opportunities.html')
 def opportunities():
     title = "Opportunities"
     description = "Opportunities page for The Pleasant Valley Computer Science Club"
@@ -66,7 +66,7 @@ def opportunities():
         jsFile=jsFile,
 )
 
-@app.route('/about')
+@app.route('/about.html')
 def about():
     title = "About"
     description = "About page for The Pleasant Valley Computer Science Club"
@@ -80,7 +80,7 @@ def about():
         jsFile=jsFile,
 )
 
-@app.route('/join')
+@app.route('/join.html')
 def join():
     title = "Join The Club"
     description = "Join The Pleasant Valley Computer Science Club"
