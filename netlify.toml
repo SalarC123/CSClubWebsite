@@ -1,4 +1,5 @@
 [build]
-  publish = "src/build/"
+  base = "src/"
+  publish = "build"
   command = "python freeze.py
 
