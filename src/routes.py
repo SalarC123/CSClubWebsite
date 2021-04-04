@@ -94,5 +94,17 @@ def join():
         jsFile=jsFile,
 )
 
+@app.errorhandler(404)
+def not_found(error):
+    title = "404 Error"
+    description = "404: Page Not Found"
+    stylesheet = "404.css"
+    return render_template(
+        "404.html",
+        title=title,
+        description=description,
+        stylesheet=stylesheet
+    )
+
 if __name__ == "__main__":
     app.run()
