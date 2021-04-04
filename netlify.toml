@@ -4,6 +4,6 @@
   command = "python freeze.py"
 
 [[redirects]]
-  from = "/*"
-  to = "/src/build/404.html"
+  from = "/src/build/"
+  to = "/404.html"
   status = 404
