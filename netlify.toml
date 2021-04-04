@@ -3,3 +3,7 @@
   publish = "build"
   command = "python freeze.py"
 
+[[redirects]]
+  from = "/*"
+  to = "/src/build/404.html"
+  status = 404
