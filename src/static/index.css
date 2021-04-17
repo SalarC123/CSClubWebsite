@@ -20,6 +20,7 @@
 }
 
 .content-wrapper h1 {
+    /* font-size: clamp(30px,3vw, 750px); */
     font-size: 3vw;
     width: 35vw;
 }
@@ -195,8 +196,8 @@
         font-size: 3vw;
     }
     .content-wrapper button {
-        /* width: 100%;
-        font-size: 3.5vw; */
+        /* width: 100%; */
+        /* font-size: 1rem; */
     }
     .svg-wrapper img {
         width: 80vw;
@@ -207,31 +208,7 @@
         align-items: center;
         justify-content: center;
     }
-    .footer {
-        height: 35rem;
-    }
-    .footer-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-nav a {
-        border:none;
-    }
-    .social-media-icon {
-        margin: 1rem;
-    }
-    .footer-logo {
-        flex-direction: column;
-        text-align: center;
-    }
     .landing-page-resources h1 {
         width: 65vw;
     }
 }
-
-/* @media (max-width:900px) {
-    .navbar {
-        flex-direction: column;
-    }
-} */
