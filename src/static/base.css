@@ -92,6 +92,8 @@ body {
 
 .page-wave-down {
     margin-top: -1rem;
+    /* width: 100.6%;
+    transform: translateX(-0.5%); */
 }
 
 .page-wave-up {

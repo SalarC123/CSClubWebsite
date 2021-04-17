@@ -3,7 +3,7 @@
 
 .opportunities-section {
     background-color: #1E202D;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     overflow-y: scroll;
 }
@@ -80,10 +80,6 @@
     width: calc(100% - 2rem);
     margin: 1rem;
     aspect-ratio: 16 / 9;
-}
-
-.finished {
-
 }
 
 @media (max-width:1500px) {
