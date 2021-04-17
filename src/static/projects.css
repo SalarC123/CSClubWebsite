@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
 
-.opportunities-section {
+.projects-section {
     background-color: #1E202D;
-    height: 70vh;
+    height: 30vh;
     width: 100%;
     overflow-y: scroll;
 }
