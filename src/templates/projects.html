@@ -1,5 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Projects</h1>
+    <section class="projects-section">
+        <div class="content-wrapper">
+            <h1>
+                <div class="gradient-text">Projects</div>
+            </h1>
+
+            <div class="card-grid">
+                <a href="#">
+                    <div class="card">
+                        <h3>No projects yet 😔</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <h3>Help us make some 😃</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <h3>Or suggest ideas 😎</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <img src="../static/Images/page-wave-1.svg" alt="Page Wave Down" class="page-wave-down">
 {% endblock %}
