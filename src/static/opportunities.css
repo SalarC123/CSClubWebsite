@@ -66,6 +66,7 @@
     transition: transform 0.5s ease;
     cursor: pointer;
 }
+
 ::-webkit-scrollbar {
     width: 0rem;  /* removes scrollbar space */
     background: transparent  /* makes scrollbar invisible */
