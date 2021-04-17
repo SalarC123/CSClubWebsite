@@ -1,5 +1,47 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Resources</h1>
+    <section class="resources-section">
+        <div class="content-wrapper">
+            <h1>
+                <div class="gradient-text">CS Resources</div>
+            </h1>
+    
+            <div class="card-grid">
+                <a target="_blank" href="https://www.codewars.com">
+                    <div class="card">
+                        <img class="card-image" src="https://i.pinimg.com/600x315/3a/9d/c3/3a9dc37f10e6f213e2af5d49efee5774.jpg" alt="Codewars">
+                        <h3 class="card-header">Codewars</h3>
+                        <p>Type: Challenge Problems</p>
+                        <p class="card-desc">Really good beginner to advanced problems for almost any programming language. Shows top rated solutions after you solve a problem or give up</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://marksheet.io">
+                    <div class="card">
+                        <img class="card-image" src="https://marksheet.io/images/marksheet-banner.png" alt="Marksheet">
+                        <h3 class="card-header">Marksheet</h3>
+                        <p>Type: Course</p>
+                        <p class="card-desc">Free HTML and CSS course for complete beginners</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.edx.org/cs50">
+                    <div class="card">
+                        <img class="card-image" src="https://i.ytimg.com/vi/pejxLkT-wek/maxresdefault.jpg" alt="CS50">
+                        <h3 class="card-header">CS50</h3>
+                        <p>Type: Course</p>
+                        <p class="card-desc">Courses about web development, mobile development, game development, artificial intelligence, and more. Created by Harvard and completely free</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA">
+                    <div class="card">
+                        <img class="card-image" src="https://i.ytimg.com/vi/LnzuMJLZRdU/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAlRQGbNzVi9eVvAMj4xGDZDmB7CA" alt="Ben Eater Video">
+                        <h3 class="card-header">Ben Eater</h3>
+                        <p>Type: Youtuber</p>
+                        <p class="card-desc">Makes videos about electronics and computer architecture. He explores true computer science and builds advanced computers with just breadboards</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <img src="../static/Images/page-wave-1.svg" alt="Page Wave Down" class="page-wave-down">
 {% endblock %}
