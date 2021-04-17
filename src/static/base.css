@@ -89,3 +89,32 @@ body {
     width: 3rem;
     height: 3rem;
 }
+
+.page-wave-down {
+    margin-top: -1rem;
+}
+
+.page-wave-up {
+    margin-bottom: -1.6rem;
+}
+
+@media (max-width:1500px) {
+    .footer {
+        height: 35rem;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav a {
+        border:none;
+    }
+    .social-media-icon {
+        margin: 1rem;
+    }
+    .footer-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
