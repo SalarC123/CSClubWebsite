@@ -19,6 +19,7 @@ body {
     align-items: center;
     padding-right: 1rem;
     background-color: #1E202D;
+    z-index: 3;
 }
 
 .navbar h3 {
@@ -100,6 +101,36 @@ body {
     margin-bottom: -1.6rem;
 }
 
+.hamburger-icon {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hamburger-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E202D;
+    height: 30rem;
+    display: none;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: -30rem;
+    /* transition: margin-top 0.5s ease; */
+}
+
+.active {
+    margin-top: 0;
+    transition: margin-top 0.5s ease;
+}
+
+.hamburger-dropdown a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+
 @media (max-width:1500px) {
     .footer {
         height: 35rem;
@@ -118,5 +149,17 @@ body {
     .footer-logo {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width:900px) {
+    .navlink {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+    .hamburger-dropdown {
+        display: flex;
     }
 }

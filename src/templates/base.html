@@ -21,7 +21,17 @@
             <a class="navlink" href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
             <a class="navlink" href={{ url_for("about") }}><h3>About</h3></a>
             <a class="navlink" href={{ url_for("join") }}><button>Join Club</button></a>
+            <img onclick="mobileMenuActivate()" src="../static/Images/hamburger.png" alt="Hamburger Menu" class="hamburger-icon">
         </nav>
+
+        <div class="hamburger-dropdown">
+            <a href={{ url_for("landing") }}><h3>Home</h3></a>
+            <a href={{ url_for("projects") }}><h3>Projects</h3></a>
+            <a href={{ url_for("resources") }}><h3>Coding Resources</h3></a>
+            <a href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
+            <a href={{ url_for("about") }}><h3>About</h3></a>
+            <a href={{ url_for("join") }}><h3>Join Club</h3></a>
+        </div>
 
         {% block content %}
         {% endblock %}
@@ -46,6 +56,7 @@
         </footer>
 
         <script src={{ '../static/{}'.format(jsFile) }}></script>
+        <script src="../static/base.js"></script>
     </body>
 
 </html>
