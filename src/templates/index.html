@@ -24,7 +24,7 @@
             <img src="../static/Images/landing-page-laptop.svg" alt="Girl Coding">
         </div>
         <div class="content-wrapper">
-            <h1>Let's <div class="gradient-text">Learn</div></h1>
+            <h1 class="fade-in">Let's <div class="gradient-text">Learn</div></h1>
             <p>Check out these high quality, free resources to get a head start</p>
             <a href={{ url_for("resources") }}><button>Resources</button></a>
         </div>
@@ -34,7 +34,7 @@
 
     <section class="landing-page-projects">
         <div class="content-wrapper">
-            <h1>Check Out <div class="gradient-text">Our Projects</div></h1>
+            <h1 class="fade-in">Check Out <div class="gradient-text">Our Projects</div></h1>
             <p>Help us add to this list by pitching your own ideas</p>
             <a href={{ url_for("projects") }}><button>Projects</button></a>
         </div>
@@ -51,7 +51,7 @@
             <img src="../static/Images/landing-page-opportunities.svg" alt="">
         </div>
         <div class="content-wrapper">
-            <h1>Further <div class="gradient-text">Your Career</div></h1>
+            <h1 class="fade-in">Further <div class="gradient-text">Your Career</div></h1>
             <p>Participate in local computer science events and discover new opportunities</p>
             <a href={{ url_for("opportunities") }}><button>Opportunities</button></a>
         </div>
@@ -62,7 +62,7 @@
 
     <section class="landing-page-about">
         <div class="content-wrapper">
-            <h1>Meet <div class="gradient-text">Us</div></h1>
+            <h1 class="fade-in">Meet <div class="gradient-text">Us</div></h1>
             <p>View the current club members and learn more about our mission</p>
             <a href={{ url_for("about") }}><button>About Us</button></a>
         </div>
@@ -71,4 +71,7 @@
         </div>
     </section>
     <img class="page-wave-down" src="../static/Images/page-wave-1.svg" alt="Page Wave Down">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 {% endblock %}
