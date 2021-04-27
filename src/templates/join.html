@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Join Club</h1>
+    <section class="join-section">
+        <div class="content-wrapper">
+            <h1><div class="gradient-text">Join Us!</div></h1>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="../static/Images/discord.svg" alt="Discord Icon" class="icon">
+                    <a target="_blank" href="https://discord.gg/7eZP2YPBsD"><button class="discord-button">Discord</button></a>
+                </div>
+                <div class="card">
+                    <img src="../static/Images/skype.svg" alt="Skype Icon" class="icon">
+                    <a target="_blank" href="https://join.skype.com/sNtbedIYrOIP"><button class="skype-button">Skype</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="page-wave-down" src="../static/Images/page-wave-1.svg" alt="Page Wave Down">
 {% endblock %}
