@@ -5,9 +5,10 @@ app = Flask(__name__)
 # TODO SEPARATE @MEDIA STYLES INTO RESPECTIVE FILES
 
 # TO RUN FLASK APP, TYPE THIS IN THE TERMINAL:
-    # source venv/bin/activate
     # export FLASK_APP=routes.py
+    # source venv/bin/activate
     # cd src
+    # pip3 install -r requirements.txt
     # flask run
 
 @app.route('/')
