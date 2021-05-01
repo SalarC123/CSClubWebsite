@@ -45,18 +45,14 @@
 @media (max-width:1500px) {
     .content-wrapper h1 {
         width: 90vw;
-        font-size: 7.5vw;
+        font-size: clamp(2.5rem, 7.5vw, 100rem);
     }
     .content-wrapper h3 {
         display: none;
     }
     .content-wrapper p {
         width: 70vw;
-        font-size: 3vw;
-    }
-    .content-wrapper button {
-        font-size: 2.5vw;
-        padding: min(2vw, 0.5rem)
+        font-size: clamp(1.3rem, 3vw, 100rem);
     }
     .svg-wrapper img {
         width: 70vw;

@@ -91,7 +91,7 @@
     }
     .content-wrapper h1 {
         width: 90vw;
-        font-size: 7.5vw;
+        font-size: clamp(2.5rem, 7.5vw, 100rem);
     }
     .card h3 {
         font-size: 3vw;

@@ -65,11 +65,11 @@
 }
 
 .discord-button {
-    background-color: #9da5da;
+    background-color: #7289da;
 }
 
 .skype-button {
-    background-color: #2b8cd7;
+    background-color: #0078d7;
 }
 
 .icon {
@@ -85,7 +85,7 @@
     }
     .content-wrapper h1 {
         width: 90vw;
-        font-size: 7.5vw;
+        font-size: clamp(2.5rem, 7.5vw, 100rem);
     }
     .card-grid {
     }
