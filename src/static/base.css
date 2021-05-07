@@ -162,4 +162,7 @@ body {
     .hamburger-dropdown {
         display: flex;
     }
+    .content-wrapper p {
+        font-size: 17px;
+    }
 }
