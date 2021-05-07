@@ -3,9 +3,8 @@
 
 .projects-section {
     background-color: #1E202D;
-    height: 30vh;
+    height: auto;
     width: 100%;
-    overflow-y: scroll;
 }
 
 .content-wrapper {
