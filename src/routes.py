@@ -6,10 +6,17 @@ app = Flask(__name__)
 
 # TO RUN FLASK APP, TYPE THIS IN THE TERMINAL:
     # export FLASK_APP=routes.py
-    # source venv/bin/activate
+    # MAC:
+      # python3 -m venv venv
+      # . venv/bin/activate
+    # WINDOWS:
+      # py -3 -m venv venv
+      # venv\Scripts\activate
     # cd src
-    # pip3 ins$ export FLASK_APP=hello
+    # pip3 install -r requirements.txt
     # flask run
+
+# TO RUN APP ON REPL.IT, CLICK RUN (EVERYTHING IS SET UP INSIDE THE .REPLIT FOLDER ALREADY)
 
 @app.route('/')
 def landing():
@@ -94,6 +101,30 @@ def join():
         stylesheet=stylesheet,
         jsFile=jsFile,
 )
+
+@app.route('/programs/physics')
+def physics():
+  title = "Physics TI84 Programs"
+  description = "Physics programs for graphing calculators"
+  stylesheet = "physics.css"
+  jsFile = "physics.js"
+  return "physics"
+
+@app.route('/programs/geometry')
+def geometry():
+  title = "Geometry TI84 Programs"
+  description = "Geometry programs for graphing calculators"
+  stylesheet = "geometry.css"
+  jsFile = "geometry.js"
+  return "geometry"
+
+@app.route('/programs/converters')
+def converters():
+  title = "Conversion TI84 Programs"
+  description = "Conversion programs for graphing calculators"
+  stylesheet = "converters.css"
+  jsFile = "converters.js"
+  return "converters"
 
 @app.errorhandler(404)
 def not_found(error):
