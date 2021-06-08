@@ -16,7 +16,13 @@ app = Flask(__name__)
     # pip3 install -r requirements.txt
     # flask run
 
-# TO RUN APP ON REPL.IT, CLICK RUN (EVERYTHING IS SET UP INSIDE THE .REPLIT FOLDER ALREADY)
+# TO RUN APP ON REPL.IT
+  # create .replit file and add
+    # language = "bash"
+    # run = "python3 -m pip install --user --upgrade pip && pip install --upgrade pip && export FLASK_APP=routes.py && python3 -m venv venv && . venv/bin/activate && cd src && pip3 install -r requirements.txt && flask run --host=0.0.0.0 --port=8000"
+  # Now click repl's "run" button
+  # The second time you run it, you need to remove everything before "export" in the "run" command 
+  # if you reload the page, add the original "run" command in the .replit file again
 
 @app.route('/')
 def landing():
