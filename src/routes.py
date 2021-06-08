@@ -8,7 +8,7 @@ app = Flask(__name__)
     # export FLASK_APP=routes.py
     # source venv/bin/activate
     # cd src
-    # pip3 install -r requirements.txt
+    # pip3 ins$ export FLASK_APP=hello
     # flask run
 
 @app.route('/')

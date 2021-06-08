@@ -2,23 +2,35 @@
 
 <html>
 
-    <head>
-        <title>{{ title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta name="description" content={{ description }}/>
-        <!-- CONTAINS NAV AND FOOTER STYLING -->
-        <link rel="stylesheet" href="../static/base.css">
-        <link rel="stylesheet" href={{ '../static/{}'.format(stylesheet) }}>
-    </head>
+<head>
+	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="description" content={{ description }}/>
+	<!-- CONTAINS NAV AND FOOTER STYLING -->
+	<link rel="stylesheet" href="../static/base.css">
+	<link rel="stylesheet" href={{ '../static/{}'.format(stylesheet) }}>
+</head>
 
-    <body>
-        <nav class="navbar">
-            <a href={{ url_for("landing") }}><img src="../static/Images/logo.png" alt="PVCS Logo" class="logo"></a>
+<body>
+	<nav class="navbar">
+		<a href={{ url_for( "landing") }}><img src="../static/Images/logo.png" alt="PVCS Logo" class="logo"></a>
             <a class="navlink" href={{ url_for("landing") }}><h3>Home</h3></a>
             <a class="navlink" href={{ url_for("projects") }}><h3>Projects</h3></a>
             <a class="navlink" href={{ url_for("resources") }}><h3>Coding Resources</h3></a>
             <a class="navlink" href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
+        <!--- <div class="dropdown">
+              <button class="dropdownbutton"> TI Programs
+                <i class="fa fa-caret-down></i>
+              </button>
+              <div class="dropdown-content">
+                <a href={{ url_for("physics") }}>Physics</a>
+                <a href={{url_for("geometry")}}>Geometry</a>
+                <a href={{url_for("converters")}}>Converters</a>
+              </div>
+            </div>
+          </div>
+                --->
             <a class="navlink" href={{ url_for("about") }}><h3>About</h3></a>
             <a class="navlink" href={{ url_for("join") }}><button>Join Club</button></a>
             <img onclick="mobileMenuActivate()" src="../static/Images/hamburger.png" alt="Hamburger Menu" class="hamburger-icon">
