@@ -108,7 +108,7 @@ def join():
         jsFile=jsFile,
 )
 
-@app.route('/programs/physics')
+@app.route('/programs/physics.html')
 def physics():
   title = "Physics TI84 Programs"
   description = "Physics programs for graphing calculators"
@@ -122,7 +122,7 @@ def physics():
     jsFile=jsFile,
   )
 
-@app.route('/programs/geometry')
+@app.route('/programs/geometry.html')
 def geometry():
   title = "Geometry TI84 Programs"
   description = "Geometry programs for graphing calculators"
@@ -136,7 +136,7 @@ def geometry():
     jsFile=jsFile,
   )
 
-@app.route('/programs/converters')
+@app.route('/programs/converters.html')
 def converters():
   title = "Conversion TI84 Programs"
   description = "Conversion programs for graphing calculators"
@@ -150,7 +150,7 @@ def converters():
     jsFile=jsFile,
   )
 
-@app.route('/legal')
+@app.route('/legal.html')
 def legal():
   title = "Terms of Service & Privacy Policy"
   description = "Terms of Service of the Website and Privacy Policy Notice of Website"
