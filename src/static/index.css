@@ -186,6 +186,7 @@
         width: 90vw;
         font-size: clamp(2.5rem, 7.5vw, 100rem);
         line-height: clamp(3rem, 10vw, 100rem);
+        margin-top: 3rem;
     }
     .content-wrapper p {
         width: 75vw;

@@ -114,7 +114,13 @@ def physics():
   description = "Physics programs for graphing calculators"
   stylesheet = "physics.css"
   jsFile = "physics.js"
-  return "physics"
+  return render_template(
+    "TIphysics.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+    jsFile=jsFile,
+  )
 
 @app.route('/programs/geometry')
 def geometry():
@@ -122,7 +128,13 @@ def geometry():
   description = "Geometry programs for graphing calculators"
   stylesheet = "geometry.css"
   jsFile = "geometry.js"
-  return "geometry"
+  return render_template(
+    "TIgeometry.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+    jsFile=jsFile,
+  )
 
 @app.route('/programs/converters')
 def converters():
@@ -130,7 +142,25 @@ def converters():
   description = "Conversion programs for graphing calculators"
   stylesheet = "converters.css"
   jsFile = "converters.js"
-  return "converters"
+  return render_template(
+    "TIconverters.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+    jsFile=jsFile,
+  )
+
+@app.route('/legal')
+def legal():
+  title = "Terms of Service & Privacy Policy"
+  description = "Terms of Service of the Website and Privacy Policy Notice of Website"
+  stylesheet = "legal.css"
+  return render_template(
+    "legal.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+  )
 
 @app.errorhandler(404)
 def not_found(error):
@@ -143,6 +173,7 @@ def not_found(error):
         description=description,
         stylesheet=stylesheet
     )
+
 
 if __name__ == "__main__":
     app.run()
