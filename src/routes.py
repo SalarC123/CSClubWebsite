@@ -6,10 +6,23 @@ app = Flask(__name__)
 
 # TO RUN FLASK APP, TYPE THIS IN THE TERMINAL:
     # export FLASK_APP=routes.py
-    # source venv/bin/activate
+    # MAC:
+      # python3 -m venv venv
+      # . venv/bin/activate
+    # WINDOWS:
+      # py -3 -m venv venv
+      # venv\Scripts\activate
     # cd src
     # pip3 install -r requirements.txt
     # flask run
+
+# TO RUN APP ON REPL.IT
+  # create .replit file and add
+    # language = "bash"
+    # run = "python3 -m pip install --user --upgrade pip && pip install --upgrade pip && export FLASK_APP=routes.py && python3 -m venv venv && . venv/bin/activate && cd src && pip3 install -r requirements.txt && flask run --host=0.0.0.0 --port=8000"
+  # Now click repl's "run" button
+  # The second time you run it, you need to remove everything before "export" in the "run" command 
+  # if you reload the page, add the original "run" command in the .replit file again
 
 @app.route('/')
 def landing():
@@ -95,6 +108,60 @@ def join():
         jsFile=jsFile,
 )
 
+@app.route('/programs/physics')
+def physics():
+  title = "Physics TI84 Programs"
+  description = "Physics programs for graphing calculators"
+  stylesheet = "physics.css"
+  jsFile = "physics.js"
+  return render_template(
+    "TIphysics.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+    jsFile=jsFile,
+  )
+
+@app.route('/programs/geometry')
+def geometry():
+  title = "Geometry TI84 Programs"
+  description = "Geometry programs for graphing calculators"
+  stylesheet = "geometry.css"
+  jsFile = "geometry.js"
+  return render_template(
+    "TIgeometry.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+    jsFile=jsFile,
+  )
+
+@app.route('/programs/converters')
+def converters():
+  title = "Conversion TI84 Programs"
+  description = "Conversion programs for graphing calculators"
+  stylesheet = "converters.css"
+  jsFile = "converters.js"
+  return render_template(
+    "TIconverters.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+    jsFile=jsFile,
+  )
+
+@app.route('/legal')
+def legal():
+  title = "Terms of Service & Privacy Policy"
+  description = "Terms of Service of the Website and Privacy Policy Notice of Website"
+  stylesheet = "legal.css"
+  return render_template(
+    "legal.html",
+    title=title,
+    description=description,
+    stylesheet=stylesheet,
+  )
+
 @app.errorhandler(404)
 def not_found(error):
     title = "404 Error"
@@ -106,6 +173,7 @@ def not_found(error):
         description=description,
         stylesheet=stylesheet
     )
+
 
 if __name__ == "__main__":
     app.run()
