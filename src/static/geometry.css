@@ -82,6 +82,53 @@
     aspect-ratio: 16 / 9;
 }
 
+.ti-disclaimer {
+  margin: 4rem;
+
+}
+.ti-disclaimer p {
+  font-size: 1rem;
+  align-items: center;
+  color:white;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.ti-instructions-section {
+    background-color:white;
+    height: auto;
+    width: 100%;
+}
+
+.ti-instructions {
+  margin: 4rem;
+}
+
+.ti-instructions h4 {
+  font-size:1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.ti-instructions p {
+  font-size: 1rem;
+}
+
+.ti-instructions li {
+  font-size: 1.2rem;
+  position: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+ul {
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
+
 @media (max-width:1500px) {
     .content-wrapper {
         align-items: center;
