@@ -1,7 +1,93 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
+<section class="physics-section">
+	<div class="content-wrapper">
+		<h1>
+			<div class="gradient-text">Physics</div>
+		</h1>
 
-{% block content %}
-  <div>
-    Physics
-  </div>
+		<div class="card-grid">
+      <a target="_blank" href="../static/tizip/RANGEFOR.zip" download="RANGEFOR.zip">
+				            <div class="card">
+					              <h3 class="card-header">Formula for Finding the Range of a Projectile Shot from Ground Level</h3>
+					              <p>RANGEFOR</p>
+					              <img class="card-image" src="../static/Images/range.svg" alt="range">
+                        <p class="card-desc">This program is used for finding the x position displacement given the initial velocity of the projectile, degree of projectile launch, assuming y final displacement is 0. </p>
+                    </div>
+        </a>
+			<a target="_blank" href="../static/tizip/IVELOCIT.zip" download="IVELOCIT.zip">
+				            <div class="card">
+					              <h3 class="card-header">Kinematic Formula for Finding the Initial Velocity of a Projectile</h3>
+					              <p>IVELOCIT</p>
+					              <img class="card-image" src="../static/Images/launch.svg" alt="launch">
+                        <p class="card-desc">This program is used for finding the initial velocity of a projectile in standard gravity given launch degree, the range of x position, and the end y displacement. </p>
+                    </div>
+        </a>
+      <a target="_blank" href="../static/tizip/ALTSPACE.zip" download="ALTSPACE.zip">
+                    <div class="card">
+                        <h3 class="card-header">Centripetal Motion Derivation for Finding the Altitude of a Satelite in Space</h3>
+                        <p>ALTSPACE</p>
+                        <img class="card-image" src="../static/Images/orbit.svg" alt="orbit">
+                
+                        <p class="card-desc">This program is used for finding the altitude of an orbitting satellite given the period of the satellite's motion. </p>
+                    </div>
+      </a>
+      <a target="_blank" href="../static/tizip/YMAX.zip" download="YMAX.zip">
+                    <div class="card">
+                        <h3 class="card-header">Kinematic Formula for Finding the Maximum Y Displacement of a Projectile</h3>
+                        <p>YMAX</p>
+                        <img class="card-image" src="../static/Images/basketball.svg" alt="basketball">
+                        <p class="card-desc">This program is used for finding the max y displacement given initial velocity and degree of projectile motion. </p>
+                    </div>
+        </a>
+      <a target="_blank" href="../static/tizip/RNGCSTL.zip" download="RNGCSTL.zip">
+                    <div class="card">
+                        <h3 class="card-header">Kinematic Formula for Finding the Maximum X Displacement of a Projectile Shot From A Castle</h3>
+                        <p>RNGCSTL</p>
+                        <img class="card-image" src="../static/Images/castle.svg" alt="castle">
+                        <p class="card-desc">This program is used for finding the max x displacement given degree of projectile motion, y position displacement, and initial velocity of projectile. </p>
+                    </div>
+        </a>
+      <a target="_blank" href="../static/tizip/GFSTR.zip" download="GFSTR.zip">
+                    <div class="card">
+                        <h3 class="card-header">Centripetal Motion Formula for Finding the Gravity Field Strength of a Planet</h3>
+                        <p>GFSTR</p>
+                        <img class="card-image" src="../static/Images/gravity.svg" alt="astronaut gravity">
+                        <p class="card-desc">This program is used for finding the gravity field of a planet given the mass of the planet and radius of the planet. </p>
+                    </div>
+        </a>
+      <a target="_blank" href="../static/tizip/SWINGFC.zip" download="SWINGFC.zip">
+                    <div class="card">
+                        <h3 class="card-header">Centripetal Motion Formula for Finding Tension, Centripetal Force, and Period of a Swinging Mass</h3>
+                        <p>SWINGFC</p>
+                        <img class="card-image" src="../static/Images/tether.svg" alt="tether string">
+                        <p class="card-desc">This program is used for finding the tension force and centripetal force of a swing at an angel given length of string, angle of String, and mass. </p>
+                    </div>
+        </a>
+            </div>
+        </div>
+    </section>
+    <img src="../static/Images/page-wave-1.svg" alt="Page Wave Down" class="page-wave-down">
+
+       <section class="ti-instructions-section">
+        <div class="content-wrapper">
+          <div class="ti-instructions">
+          <h4>There are 3 ways to use the program: <br><br>
+            <ul><li>Using the TI Connect CE Software</li><p>Download the Software at <a target="_blank" href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw">TI Connect CE Software.</a> Locate a <a target="_blank" href="https://education.ti.com/en/products/accessories/connectivity-kit">TI link cable</a> or standard USB Mini Type A to USB Type Mini B. Then follow the step by step instructions after unzipping the file. <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/iS-28EwTxqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br></p>
+            <li>Using the TI Connect Software</li><p>Download the Software at <a target="_blank" href="https://education.ti.com/en/products/computer-software/ti-connect-sw">TI Connect Software.</a> Obtain a <a target="_blank" href="https://education.ti.com/en/products/accessories/connectivity-kit">TI link cable</a> or standard USB Mini Type A to USB Type Mini B. Then follow the step by step instructions after unzipping the file. For <a target="_blank" href="../static/tizip/TIConnectMAC-SendFiles.pdf" download="../static/tizip/TIConnectMAC-SendFiles.pdf">Macintosh</a> or <a target="_blank" href="../static/tizip/TIConnectPC-SendFiles.pdf" download="../static/tizip/TIConnectPC-SendFiles.pdf">PC</a><br><br></p>
+            <li>Manually Programming Your Calculator</li><p>You can manually program the files with basic key knowledge found <a target="_blank" href="../static/tizip/TIProgrammingGuide.pdf" download="..static/tizip/TIProgrammingGuide.pdf">here.</a> You will still need to download the TI Connect or Connect CE Software to view the files.</p>
+            </ul>
+        </h4>
+          </div>
+        </div>
+</section>
+  <img class="page-wave-up" src="../static/Images/page-wave-2.svg" alt="Page Wave Up">
+<section class="physics-section">
+  <div class="content-wrapper">
+<div class="ti-disclaimer"><p>These programs are meant to aid in problem solving, rather than replace the concepts. Therefore, when you use these programs, you are agreeing to the honor code that you will not cheat. In addition, PVCS Club is NOT RESPONSIBLE if the honor code is broken.
+<br> Disclaimer: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Texas Instruments, or any of its subsidiaries or its affiliates. The official Texas Instruments website can be found at <a target="_blank" href="https://www.ti.com">https://www.ti.com</a>.
+The names of TI Connect and Texas Instruments as well as related names, marks, emblems and images are registered trademarks of their respective owners. By using these programs, you acknowledge that this tool is freely presented for use by the general public, but NO waranties or guarantees are provided about the correctness, accuracy, or stability of the tool, or about its fitness for any purpose. Data may be lost without warning.
+</p></div></div>
+</section>
+<img src="../static/Images/page-wave-1.svg" alt="Page Wave Down" class="page-wave-down">
+
 {% endblock %}
