@@ -89,7 +89,7 @@ body {
 
 .dropdown-content a:hover {
   /* background-color: #00eb74; */
-  background: linear-gradient(to right, #00eb74, #00d9ff)
+  background: linear-gradient(to right, #00ea75, #00d9ff)
   }
 
 .dropdown:hover .dropdown-content {

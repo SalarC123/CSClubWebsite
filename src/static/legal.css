@@ -1,12 +1,13 @@
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: flex-start;
     height: auto;
     background-color: #1e202d;
     color: white;
-    text-align: center;
+    text-align: left;
+    padding: 3rem;
 }
 
 .content-wrapper h1 {
@@ -19,6 +20,11 @@
     font-size: 1vw;
     width: auto;
 }
+
+.content-wrapper h2 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 .content-wrapper button {
     margin: 2rem 0rem;
@@ -33,6 +39,13 @@
     cursor: pointer;
 }
 
+.content-wrapper ul {
+  list-style-type: circle;
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .link {
     text-decoration: none;
     color: white;
@@ -45,14 +58,14 @@
 @media (max-width:1500px) {
     .content-wrapper h1 {
         width: 90vw;
-        font-size: clamp(2.5rem, 7.5vw, 100rem);
+        font-size: clamp(2rem, 5w, 75rem);
     }
     .content-wrapper h3 {
         display: none;
     }
     .content-wrapper p {
         width: 70vw;
-        font-size: clamp(1.3rem, 3vw, 100rem);
+        font-size: clamp(1rem, 1vw, 50rem);
     }
     .svg-wrapper img {
         width: 70vw;
