@@ -39,13 +39,10 @@
         <a href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
         <a href={{ url_for("about") }}><h3>About</h3></a>
         <a href={{ url_for("join") }}><h3>Join Club</h3></a>
-        <a href=""><h3>TI Programs</h3></a>
-        <!-- <div class="dropdown-content">
-          <a href={{ url_for("physics") }}>Physics</a>
-          <a href={{url_for("geometry")}}>Geometry</a>
-          <a href={{url_for("converters")}}>Converters</a>
-        </div> -->
-    </div>
+        <a href={{ url_for("physics") }}><h3>Physics Programs</h3></a>
+        <a href={{ url_for("geometry")}}><h3>Geometry Programs</h3></a>
+        <a href={{ url_for("converters")}}><h3>Converters Programs</h3></a>
+  </div>
 
     {% block content %}
     {% endblock %}
