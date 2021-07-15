@@ -71,7 +71,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(39, 41, 48, 0.7);
+    background-color: rgba(39, 41, 48);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -89,9 +89,13 @@ body {
 
 .dropdown-content a:hover {
     /* background-color: #00eb74; */
-    background: linear-gradient(to right, #00ea75, #00d9ff);
+    background:#00d9ff;
     color: #1E202D;
-  }
+}
+
+.dropdown-content a:nth-child(even):hover {
+    background:#00eb74;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
