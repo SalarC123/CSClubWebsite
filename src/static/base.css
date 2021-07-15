@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+.active {
+    border-bottom: 3px solid #00eb74;
+}
+
 body {
     font-family: Catamaran;
     color: #1E202D;
