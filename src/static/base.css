@@ -223,4 +223,7 @@ body {
     .content-wrapper p {
         font-size: 17px;
     }
+    .footer {
+        height: auto;
+    }
 }
