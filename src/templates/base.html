@@ -19,19 +19,19 @@
   <body>
     <nav class="navbar">
       <a href={{ url_for( "landing") }}><img src="../static/Images/logo.png" alt="PVCS Logo" class="logo"></a>
-      <a class="navlink {{'active' if active_page == "home" else ""}}" href={{ url_for("landing") }}><h3>Home</h3></a>
-      <a class="navlink {{'active' if active_page == "projects" else ""}}" href={{ url_for("projects") }}><h3>Projects</h3></a>
-      <a class="navlink {{'active' if active_page == "resources" else ""}}" href={{ url_for("resources") }}><h3>Coding Resources</h3></a>
-      <a class="navlink {{'active' if active_page == "opportunities" else ""}}" href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
+      <a class="navlink {{'active-page' if active_page == "home" else ""}}" href={{ url_for("landing") }}><h3>Home</h3></a>
+      <a class="navlink {{'active-page' if active_page == "projects" else ""}}" href={{ url_for("projects") }}><h3>Projects</h3></a>
+      <a class="navlink {{'active-page' if active_page == "resources" else ""}}" href={{ url_for("resources") }}><h3>Coding Resources</h3></a>
+      <a class="navlink {{'active-page' if active_page == "opportunities" else ""}}" href={{ url_for("opportunities") }}><h3>Opportunities</h3></a>
       <div class="dropdown navlink">
         <button class="dropbtn"><h3>TI Programs</h3></button>
           <div class="dropdown-content">
-            <a class="{{'active' if active_page == "physics" else ""}}" href={{ url_for("physics") }}>Physics</a>
-            <a class="{{'active' if active_page == "geometry" else ""}}" href={{ url_for("geometry") }}>Geometry</a>
-            <a class="{{'active' if active_page == "converters" else ""}}" href={{ url_for("converters") }}>Converters</a>
+            <a class="{{'active-page' if active_page == "physics" else ""}}" href={{ url_for("physics") }}>Physics</a>
+            <a class="{{'active-page' if active_page == "geometry" else ""}}" href={{ url_for("geometry") }}>Geometry</a>
+            <a class="{{'active-page' if active_page == "converters" else ""}}" href={{ url_for("converters") }}>Converters</a>
           </div>
       </div>
-      <a class="navlink {{'active' if active_page == "about" else ""}}" href={{ url_for("about") }}><h3>About</h3></a>
+      <a class="navlink {{'active-page' if active_page == "about" else ""}}" href={{ url_for("about") }}><h3>About</h3></a>
       <a class="navlink" href={{ url_for("join") }}><button class="navlink-button">Join Club</button></a>
       <img onclick="mobileMenuActivate()" src="../static/Images/hamburger.png" alt="Hamburger Menu" class="hamburger-icon">
     </nav>

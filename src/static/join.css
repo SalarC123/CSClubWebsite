@@ -85,7 +85,7 @@
     }
     .content-wrapper h1 {
         width: 90vw;
-        font-size: clamp(2.5rem, 7.5vw, 100rem);
+        font-size: max(2.5rem, min(7.5vw, 100rem));
     }
     .card-grid {
     }

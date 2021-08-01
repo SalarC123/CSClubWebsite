@@ -1,4 +1,5 @@
 .content-wrapper {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,14 +46,14 @@
 @media (max-width:1500px) {
     .content-wrapper h1 {
         width: 90vw;
-        font-size: clamp(2.5rem, 7.5vw, 100rem);
+        font-size: max(2.5rem, min(7.5vw, 100rem))
     }
     .content-wrapper h3 {
         display: none;
     }
     .content-wrapper p {
         width: 70vw;
-        font-size: clamp(1.3rem, 3vw, 100rem);
+        font-size: max(1.3rem, min(3vw, 100rem));
     }
     .svg-wrapper img {
         width: 70vw;

@@ -7,7 +7,7 @@
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     /* margin-left: 1.5rem; */
     align-items: center;
     text-align: center;
@@ -184,13 +184,13 @@
     }
     .content-wrapper h1 {
         width: 90vw;
-        font-size: clamp(2.5rem, 7.5vw, 100rem);
-        line-height: clamp(3rem, 10vw, 100rem);
+        font-size: max(2.5rem, min(7.5vw, 100rem));
+        line-height: max(3rem, min(10vw, 100rem));
         margin-top: 3rem;
     }
     .content-wrapper p {
         width: 75vw;
-        font-size: clamp(1.3rem, 3vw, 100rem);
+        font-size: max(1.3rem, min(3vw, 100rem));
     }
     .svg-wrapper img {
         width: 80vw;

@@ -77,7 +77,7 @@
     }
     .content-wrapper p {
         width: 70vw;
-        font-size: clamp(1rem, 1vw, 50rem);
+        font-size: max(1rem, min(1vw, 50rem));
     }
     .svg-wrapper img {
         width: 70vw;
