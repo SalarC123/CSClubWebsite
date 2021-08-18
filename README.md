@@ -18,6 +18,36 @@ Fork the project and send a pull request. This repository is actively maintained
 
 *The following commands should be done in your terminal/command prompt*
 
+If you are on Windows, run
+```
+sh windows-install.sh
+```
+
+or
+
+```
+bash windows-install.sh
+```
+
+If You are on Mac, run
+```
+sh mac-install.sh
+```
+
+or 
+
+```
+bash mac-install.sh
+```
+
+<br/>
+After doing this command, the website should be running.
+
+**If neither of these commands worked for you, try the steps below.**
+<br/>
+<br/>
+<br/>
+
 ### 1. Clone Repository
 clone the repository
 ```
