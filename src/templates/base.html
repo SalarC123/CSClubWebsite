@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
   <head>
     <title>{{ title }}</title>
@@ -18,7 +18,7 @@
 
   <body>
     <nav class="navbar">
-      <a href={{ url_for( "landing") }}><img src="../static/Images/logo.png" alt="PVCS Logo" class="logo"></a>
+      <a href={{ url_for( "landing") }} aria-label="PVCS Navbar Logo"><img src="../static/Images/logo.png" alt="PVCS Logo" class="logo"></a>
       <a class="navlink {{'active-page' if active_page == "home" else ""}}" href={{ url_for("landing") }}><h3>Home</h3></a>
       <a class="navlink {{'active-page' if active_page == "projects" else ""}}" href={{ url_for("projects") }}><h3>Projects</h3></a>
       <a class="navlink {{'active-page' if active_page == "resources" else ""}}" href={{ url_for("resources") }}><h3>Coding Resources</h3></a>
@@ -53,7 +53,7 @@
 
     <footer class="footer">
         <div class="footer-logo">
-            <a href={{ url_for("landing") }}><img class="logo" src="../static/Images/logo.png" alt=""></a>
+            <a href={{ url_for("landing") }} aria-label="PVCS Footer Logo"><img class="logo" src="../static/Images/logo.png" alt="PVCS Footer Logo"></a>
             <h2>Pleasant Valley Computer Science Club</h2>
         </div>
         <div class="footer-nav">
@@ -69,8 +69,8 @@
             <a href={{ url_for("legal") }}>Terms and Conditions</a>
         </div>
         <div class="footer-icons">
-            <a target="_blank" href="https://discord.gg/7eZP2YPBsD"><img class="social-media-icon" src="../static/Images/discord.svg" alt=""></a>
-            <a target="_blank" href="https://join.skype.com/sNtbedIYrOIP"><img class="social-media-icon" src="../static/Images/skype.svg" alt=""></a>
+            <a rel="noreferrer" aria-label="Discord" target="_blank" href="https://discord.gg/7eZP2YPBsD"><img class="social-media-icon" src="../static/Images/discord.svg" alt=""></a>
+            <a rel="noreferrer" aria-label="Skype" target="_blank" href="https://join.skype.com/sNtbedIYrOIP"><img class="social-media-icon" src="../static/Images/skype.svg" alt=""></a>
         </div>
     </footer>
 
