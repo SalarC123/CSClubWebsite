@@ -3,7 +3,7 @@
 
 .join-section {
     background-color: #1E202D;
-    height: 30rem;
+    height: auto;
     width: 100%;
 }
 
@@ -56,12 +56,15 @@
 
 .card button {
     padding: 0.5rem 2rem;
-    color: #242837;
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
     font-family: Catamaran;
     border-radius: 40px;
+}
+
+.card p {
+    color: white;
 }
 
 .discord-button {
@@ -70,6 +73,11 @@
 
 .skype-button {
     background-color: #0078d7;
+}
+
+.google-form-button {
+    background-color: #7248b9;
+    color:white;
 }
 
 .icon {
@@ -87,17 +95,12 @@
         width: 90vw;
         font-size: max(2.5rem, min(7.5vw, 100rem));
     }
-    .card-grid {
-    }
     .card {
         width: 30vw;
     }
 }
 
 @media (max-width:1000px) {
-    .join-section {
-        height: 50rem;
-    }
     .card-grid {
         grid-template-columns: 1fr;
     }
@@ -106,8 +109,5 @@
     }
     .card h3 {
         font-size: 5vw;
-    }
-    .card p {
-        font-size: 3vw;
     }
 }
